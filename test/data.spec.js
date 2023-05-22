@@ -1,4 +1,4 @@
-import { ordenarNomes, filtrarFamilia, filtrarPersonagens} from '../src/js/data';
+import { ordenarNomes, filtrarFamilia, filtrarPersonagem} from '../src/js/data';
 
 const dados = [
   {
@@ -56,12 +56,12 @@ describe('filtrarFamilia', () => {
   });
 });
 
-describe('filtrarPersonagens', () => {
+describe('filtrarPersonagem', () => {
   it('filtrarPersonagens is a function', () => {
-    expect(typeof filtrarPersonagens).toStrictEqual('function');
+    expect(typeof filtrarPersonagem).toStrictEqual('function');
   });
   it('Retorna o personagem filtrado ', () => {
-    const personagemFiltrado = filtrarPersonagens(dados, "Samwell Tarly");
+    const personagemFiltrado = filtrarPersonagem(dados, "Samwell Tarly");
     const personagemEsperado = [
       {
         "fullName": "Samwell Tarly",
