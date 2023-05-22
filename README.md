@@ -1,18 +1,7 @@
 
-# Projeto Data Lovers - Game Of Thrones 💛
+<h1 align="center"> Projeto Data Lovers - Game Of Thrones 💛 </h1>
 
-Segundo projeto da turma 10 do bootcamp da Laboratoria.
-
-Desenvolvido por:
-
-Fernanda Souza [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://github.com/fernanda-asouza)
-[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://www.linkedin.com/in/fernandaasouza/)
-
-
-Renata Ribeiro
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rbcribeiro/)
-[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rbcribeiro)
-
+Este é o readme do projeto da Turma 10 da Laboratoria com o tema "Game of Thrones". Aqui você encontrará informações sobre o projeto, a utilização de filtros, ordenação alfabética e seletores HTML, JavaScript e CSS.
 
 
 ## Índice
@@ -23,17 +12,22 @@ Renata Ribeiro
 * [4. Protótipos](#4-protótipos)
 * [5. Testes de usabilidade](#5-testes-de-usabilidade)
 * [6. Checklist dos objetivos](#6-checklist-dos-objetivos)
+<br><br>
 
 ## 1. Introdução 💻
 
 Segundo a Forbes 90% dos dados que existem hoje foram gerados durante os últimos dois anos. A cada dia geramos 2.5 milhões de terabytes de dados, uma cifra sem precedentes.
 
 Apesar disso, os dados por si só são de pouca utilidade. Para que essas grandes quantidades de dados se convertam em informação compreensível para os usuários, precisamos entender e processar estes dados. Uma forma simples de fazer isso é criando interfaces e visualizações.
+<br><br>
+
 ## 2. Resumo do projeto 📄
 
-Neste projeto foi desenvolvida uma página web responsiva sobre a série Game of Thrones que permite que o usuário visualize informações e imagens dos personagens. 
+O projeto da Turma 10 da Laboratoria tem como tema principal "Game of Thrones", uma popular série de televisão baseada nos livros de George R.R. Martin. O objetivo do projeto é desenvolver uma aplicação web relacionada ao universo de Game of Thrones, utilizando técnicas de programação para criar uma experiência interativa e envolvente para os fãs da série.
 
-Essa visualização pode ser feita por nome e/ou família, além de poder ordenar em ordem alfabética crescente ou decrescente. 
+Durante o desenvolvimento do projeto, serão aplicados conceitos de filtragem, ordenação alfabética e seletores HTML, JavaScript e CSS.
+<br><br>
+
 ## 3. Histórias de usuário 💬
 
 ### Busca por informações dos personagens
@@ -50,17 +44,14 @@ Como um telespectador de Game of Thrones, eu quero visualizar as imagens dos per
 
 ### Direcionamento 
 Como um telespectador de Game of Thrones, eu quero encontrar na página web um direcionamento para o streaming que disponibiliza a série.
-
-
-
+<br><br>
 
 ## 4. Protótipos ✒️
 
 ### Baixa fidelidade
 
 ### Alta fidelidade
-
-
+<br><br>
 
 ## 5. Testes de usabilidade ❗
 
@@ -76,9 +67,7 @@ Com a ideia de acrescentar um botão que direcionava o usuário para o streaming
 ### Bug após a filtragem de personagens
 
 ### Falta de responsividade em telas de dispositivos móveis 
-
-
-
+<br><br>
 
 ## 6. Checklist dos objetivos ✅
 
@@ -105,3 +94,17 @@ Com a ideia de acrescentar um botão que direcionava o usuário para o streaming
 [✓] UI: Permite filtrar dados com base em uma condição.
 
 [✓] UI: É responsivo.
+
+### Desenvolvido por:
+
+### Fernanda Souza
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://github.com/fernanda-asouza)
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://www.linkedin.com/in/fernandaasouza/)
+
+
+### Renata Ribeiro 
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rbcribeiro/)
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rbcribeiro)
+<br><br>
