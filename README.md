@@ -50,7 +50,12 @@ Como um telespectador de Game of Thrones, eu quero encontrar na página web um d
 
 ### Baixa fidelidade
 
+<p align="center">
+    <img src=".src/img/prototipo_baixa_fidelidade.jfif" alt="Prototipo de baixa fidelidade" width="60%" /></p>
+
 ### Alta fidelidade
+<p align="center">
+    <img src=".src/img/prototipo_alta_fidelidade.png" alt="Prototipo de alta fidelidade" width="60%" /></p>
 <br><br>
 
 ## 5. Testes de usabilidade ❗
