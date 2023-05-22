@@ -58,6 +58,8 @@ Como um telespectador de Game of Thrones, eu quero encontrar na página web um d
 ### Alta fidelidade
 <p align="center">
     <img src=".github/prototipo_alta_fidelidade.png" alt="Prototipo de alta fidelidade" width="60%" /></p>
+    <p align="center">
+    <img src=".github/video_prototipo.mp4" alt="Prototipo de alta fidelidade" width="60%" /></p>
 <br><br>
 
 ## 5. Testes de usabilidade ❗
