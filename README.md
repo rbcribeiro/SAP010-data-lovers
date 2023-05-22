@@ -1,7 +1,9 @@
 
 <h1 align="center"> Projeto Data Lovers - Game Of Thrones 💛 </h1>
 
-Este é o readme do projeto da Turma 10 da Laboratoria com o tema "Game of Thrones". Aqui você encontrará informações sobre o projeto, a utilização de filtros, ordenação alfabética e seletores HTML, JavaScript e CSS.
+Este é o readme do projeto da Turma 10 da Laboratoria com o tema "Game of Thrones". Aqui você encontrará informações sobre o projeto, a utilização de filtros, ordenação alfabética e seletores HTML, JavaScript e CSS.<br>
+## [Visite nosso site](https://rbcribeiro.github.io/SAP010-data-lovers/)
+
 
 
 ## Índice
