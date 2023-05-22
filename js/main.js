@@ -23,49 +23,42 @@ function onChangeOrdenacao() {
 
 function onChangeSelecionarFamilia() {
   const familiaSelecionada = selecionarFamilia.value;
-  const listaPersonagensFiltrada = filtrarFamilia(listaPersonagens, familiaSelecionada);
-  exibirPersonagens(listaPersonagensFiltrada);
 
-  const personagensFiltradosPorFamilia = filtrarPersonagensPorFamilia(listaPersonagens, familiaSelecionada);
-  atualizarListaPersonagens(personagensFiltradosPorFamilia);
+  if (familiaSelecionada === "Todas Famílias") {
+    exibirPersonagens(listaPersonagens);
+    atualizarListaPersonagens(listaPersonagens);
+  } else {
+    const listaPersonagensFiltrada = filtrarFamilia(listaPersonagens, familiaSelecionada);
+    exibirPersonagens(listaPersonagensFiltrada);
+
+    const personagensFiltradosPorFamilia = filtrarPersonagensPorFamilia(listaPersonagens, familiaSelecionada);
+    atualizarListaPersonagens(personagensFiltradosPorFamilia);
+  }
 }
 
 function onChangeSelecionarPersonagens() {
   const personagemSelecionado = selecionarPersonagens.value;
-  const personagem = filtrarPersonagem(listaPersonagens, personagemSelecionado);
-  exibirPersonagens(personagem);
+
+  if (personagemSelecionado === "Todos Personagens") {
+    const familiaSelecionada = selecionarFamilia.value;
+    const personagensFiltradosPorFamilia = filtrarPersonagensPorFamilia(listaPersonagens, familiaSelecionada);
+    exibirPersonagens(personagensFiltradosPorFamilia);
+  } else {
+    const personagem = filtrarPersonagem(listaPersonagens, personagemSelecionado);
+    exibirPersonagens(personagem);
+  }
 }
 
 function exibirPersonagens(personagens) {
   const cardContainer = document.querySelector("#exibirPersonagens");
-
-  while (cardContainer.firstChild) {
-    cardContainer.removeChild(cardContainer.lastChild);
-  }
+  cardContainer.innerHTML = '';
 
   const cardsGot = personagens.map(personagem => {
     const cardDiv = document.createElement('div');
-    const id = document.createElement('h2');
-    const firstName = document.createElement('h2');
-    const lastName = document.createElement('h2');
-    const fullName = document.createElement('h2');
-    const title = document.createElement('h2');
-    const family = document.createElement('h2');
-    const imageUrl = document.createElement('img');
-    const born = document.createElement('h2');
-
-    id.textContent = personagem.id;
-    firstName.textContent = personagem.firstName;
-    lastName.textContent = personagem.lastName;
-    fullName.textContent = personagem.fullName;
-    title.textContent = personagem.title;
-    family.textContent = personagem.family;
-    imageUrl.src = personagem.imageUrl;
-    born.textContent = personagem.born;
-
-    cardDiv.appendChild(imageUrl);
-    cardDiv.appendChild(fullName);
-
+    cardDiv.innerHTML = `
+      <img src="${personagem.imageUrl}">
+      <h2>${personagem.fullName}</h2>
+    `;
     return cardDiv;
   });
 
@@ -73,6 +66,7 @@ function exibirPersonagens(personagens) {
     cardContainer.appendChild(card);
   });
 }
+
 
 const familyArray = [];
 familyArray.push("Todas Famílias");
@@ -162,14 +156,15 @@ fullNameArray.forEach(fullName => {
   selecionarPersonagens.appendChild(option);
 });
 
-const ordenarAZ = document.getElementById('ordenacao');
+const ordenar = document.getElementById('ordenacao');
+const opcoesOrdenacao = [
+  { value: 'az', textContent: 'A-Z' },
+  { value: 'za', textContent: 'Z-A' }
+];
 
-const optionAZ = document.createElement('option');
-optionAZ.value = 'az';
-optionAZ.textContent = 'A-Z';
-ordenarAZ.appendChild(optionAZ);
-
-const optionZA = document.createElement('option');
-optionZA.value = 'za';
-optionZA.textContent = 'Z-A';
-ordenarAZ.appendChild(optionZA);
+opcoesOrdenacao.forEach(opcao => {
+  const option = document.createElement('option');
+  option.value = opcao.value;
+  option.textContent = opcao.textContent;
+  ordenar.appendChild(option);
+});
