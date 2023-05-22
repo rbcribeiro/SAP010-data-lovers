@@ -1,19 +1,19 @@
 
 <h1 align="center"> Projeto Data Lovers - Game Of Thrones 💛 </h1>
 
-Este é o readme do projeto da Turma 10 da Laboratoria com o tema "Game of Thrones". Aqui você encontrará informações sobre o projeto, a utilização de filtros, ordenação alfabética e seletores HTML, JavaScript e CSS.<br>
-## [Visite nosso site](https://rbcribeiro.github.io/SAP010-data-lovers/)
+Este é o readme do segundo projeto da Turma 10 da Laboratoria com o tema "Game of Thrones". Aqui você encontrará informações sobre o projeto, a utilização de filtros, ordenação alfabética e seletores HTML, JavaScript e CSS.<br>
 
-
+## [Visite nosso projeto final](https://rbcribeiro.github.io/SAP010-data-lovers/)
+<br>
 
 ## Índice
 
-* [1. Introdução](#1-introdução)
-* [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Histórias de usuário](#3-histórias-de-usuário)
-* [4. Protótipos](#4-protótipos)
-* [5. Testes de usabilidade](#5-testes-de-usabilidade)
-* [6. Checklist dos objetivos](#6-checklist-dos-objetivos)
+* [1. Introdução](#1-introdução-💻)
+* [2. Resumo do projeto](#2-resumo-do-projeto-📄)
+* [3. Histórias de usuário](#3-histórias-de-usuário-💬)
+* [4. Protótipos](#4-protótipos-✒️)
+* [5. Testes de usabilidade](#5-testes-de-usabilidade-❗)
+* [6. Checklist dos objetivos](#6-checklist-dos-objetivos-✅)
 <br><br>
 
 ## 1. Introdução 💻
@@ -75,9 +75,9 @@ No segundo teste, foi observado que seria interessante ter na página um botão 
 ### Falta de sinopse e de página inicial
 Com a ideia de acrescentar um botão que direcionava o usuário para o streaming, também foi verificado que o site deveria ter uma sinopse sobre a série, mas que ficaria muitas informações em apenas uma página. Para resolver esse problema foi criada uma página para o início, contendo a sinopse, botão que direciona para as informações sobre os personagens e botão que direciona para o streaming.
 
-### Bug após a filtragem de personagens
-
 ### Falta de responsividade em telas de dispositivos móveis 
+Após a página estar desenvolvida, observamos que ao visualizar em telas diferentes do desktop as imagens e os botões ficavam deslocados. Para resolver esse problema, incluimos no CSS um media query para que a página se adeque com o layout da tela.
+
 <br><br>
 
 ## 6. Checklist dos objetivos ✅
@@ -106,16 +106,18 @@ Com a ideia de acrescentar um botão que direcionava o usuário para o streaming
 
 [✓] UI: É responsivo.
 
-### Desenvolvido por:
+<br>
+<h2 align="center"> Desenvolvido por:
+</h2>
 
-### Fernanda Souza
+<h3 align="center"> Fernanda Souza
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://github.com/fernanda-asouza)
-[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://www.linkedin.com/in/fernandaasouza/)
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://www.linkedin.com/in/fernandaasouza/)</h3>
 
 
-### Renata Ribeiro 
+<h3 align="center"> Renata Ribeiro 
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rbcribeiro/)
-[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rbcribeiro)
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rbcribeiro)</h3>
 <br><br>
