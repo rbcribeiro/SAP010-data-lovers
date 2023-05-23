@@ -23,15 +23,16 @@ html::after {
 
 ::-webkit-scrollbar{ /*customiza a barra de rolagem*/
   width: 8px;
-  }
+}
   
-  ::-webkit-scrollbar-track { /*customiza o caminho da barra de rolagem*/
-      background-color: #2c2c31 ;
-  }
+::-webkit-scrollbar-track { /*customiza o caminho da barra de rolagem*/
+  background-color: #2c2c31 ;
+}
+
+ :-webkit-scrollbar-thumb { /*barrinha que percorre o caminho sobe/desce*/
+  background-color: #9e9ea0;
+}
   
-  ::-webkit-scrollbar-thumb { /*barrinha que percorre o caminho sobe/desce*/
-      background-color: #9e9ea0;
-  }
   
 body {
   position: relative;
