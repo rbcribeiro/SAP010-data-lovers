@@ -29,4 +29,4 @@ export const filtrarPersonagens = (personagens, nome, familia) => {
       return nomeInclui && familiaInclui;
     });
   }
-}
+};
