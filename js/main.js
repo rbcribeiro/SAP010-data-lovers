@@ -65,13 +65,7 @@ function exibirPersonagens(personagens) {
   });
 }
 
-const familyArray = [];
-familyArray.push("Todas Famílias");
-
-const optionTodasFamilias = document.createElement('option');
-optionTodasFamilias.value = "Todas Famílias";
-optionTodasFamilias.textContent = "Todas Famílias";
-selecionarFamilia.appendChild(optionTodasFamilias);
+const familyArray = ['Todas Famílias'];
 
 listaPersonagens.forEach(personagem => {
   if (Array.isArray(personagem.family)) {
@@ -80,24 +74,23 @@ listaPersonagens.forEach(personagem => {
         familyArray.push(family);
       }
     });
-  } else if (typeof personagem.family === 'string') {
-    const families = personagem.family.split(',');
-    families.forEach(family => {
-      const trimmedFamily = family.trim();
-      if (!familyArray.includes(trimmedFamily)) {
-        familyArray.push(trimmedFamily);
-      }
-    });
+  } else if (typeof personagem.family === 'string' && !familyArray.includes(personagem.family)) {
+    familyArray.push(personagem.family);
   }
 });
 
-familyArray.sort();
+const optionTodasFamilias = document.createElement('option');
+optionTodasFamilias.value = "Todas Famílias";
+optionTodasFamilias.textContent = "Todas Famílias";
+selecionarFamilia.appendChild(optionTodasFamilias);
 
-familyArray.forEach(family => {
-  const option = document.createElement('option');
-  option.value = family;
-  option.textContent = family;
-  selecionarFamilia.appendChild(option);
+familyArray.sort().forEach(family => {
+  if (family !== "Todas Famílias") {
+    const option = document.createElement('option');
+    option.value = family;
+    option.textContent = family;
+    selecionarFamilia.appendChild(option);
+  }
 });
 
 function atualizarListaPersonagens(personagens) {
@@ -110,7 +103,9 @@ function atualizarListaPersonagens(personagens) {
   optionTodosPersonagens.textContent = "Todos Personagens";
   selecionarPersonagens.appendChild(optionTodosPersonagens);
 
-  personagens.forEach(personagem => {
+  const personagensOrdenados = ordenarNomes(personagens, 'az');
+
+  personagensOrdenados.forEach(personagem => {
     const option = document.createElement('option');
     option.value = personagem.fullName;
     option.textContent = personagem.fullName;
