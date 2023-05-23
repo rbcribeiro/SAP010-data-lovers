@@ -100,6 +100,17 @@ select {
     padding: 15px;
    }
 
+   button {
+    background-color: #26374C;
+    font-family: 'Grenze', serif;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: #D1CFCE;
+
+  }
+
    footer {
     background-color: #d1cfce28;
     position: absolute;
@@ -144,6 +155,8 @@ select {
   margin-top: 0;
 }
 
+
+
 .close {
   color: #D1CFCE;;
   float: right;
@@ -168,9 +181,9 @@ select {
 
 @media screen and (max-width: 768px) { 
 .logo {
-  width: 250px;
+  width: 350px;
   float: center;
-  margin: 25px 25px 0 25px;
+  margin: 25px 25px 25px 25px;
   align-self: flex-start;
 }
 
@@ -185,7 +198,7 @@ select {
 
   h1{
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
   }
   
   .exibirCards img {
@@ -193,6 +206,7 @@ select {
     width: 130px;
     border-radius: 50px;
     border: solid 3px rgb(0, 0, 0) ;  
+    margin: 300px 10px 0 10px;
     
  
     }
@@ -211,18 +225,13 @@ select {
         
   select {
     width: auto;
-    height: 20px;
-    font-size: 12px;
-
-  }
-    
-  label {
+    height: 30px;
     font-size: 15px;
-  }
-    
+   }
+
   footer {
-    font-size: 10px;
-    line-height: 0.6;
+    font-size: 15px;
+    line-height: 0.9;
   }
 
   .modal-content {
