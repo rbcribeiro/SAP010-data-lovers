@@ -125,3 +125,14 @@ opcoesOrdenacao.forEach(opcao => {
   option.textContent = opcao.textContent;
   ordenar.appendChild(option);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const anchor = window.location.hash;
+  if (anchor === "#exibirPersonagens") {
+    ordenacao.value = "az";
+    onChangeOrdenacao();
+    window.location.href = anchor;
+  } else {
+    onChangeOrdenacao(); // Chama a função para ordenar os cards ao carregar a página
+  }
+});
