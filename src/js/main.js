@@ -1,5 +1,5 @@
 import got from '../data/got/got.js';
-import { ordenarNomes, filtrarFamilia, filtrarPersonagensPorFamilia, filtrarPersonagem } from '../js/data.js';
+import { ordenarNomes, filtrarPersonagens } from '../js/data.js';
 
 const listaPersonagens = got.got;
 const ordenacao = document.getElementById("ordenacao");
@@ -16,8 +16,8 @@ onChangeSelecionarPersonagens();
 
 function onChangeOrdenacao() {
   const familiaSelecionada = selecionarFamilia.value;
-  const personagensFiltradosPorFamilia = filtrarPersonagensPorFamilia(listaPersonagens, familiaSelecionada);
-  const listaOrdenada = ordenarNomes(personagensFiltradosPorFamilia, ordenacao.value);
+  const listaPersonagensFiltrada = filtrarPersonagens(listaPersonagens, "Todos Personagens", familiaSelecionada);
+  const listaOrdenada = ordenarNomes(listaPersonagensFiltrada, ordenacao.value);
   exibirPersonagens(listaOrdenada);
 }
 
@@ -28,11 +28,9 @@ function onChangeSelecionarFamilia() {
     exibirPersonagens(listaPersonagens);
     atualizarListaPersonagens(listaPersonagens);
   } else {
-    const listaPersonagensFiltrada = filtrarFamilia(listaPersonagens, familiaSelecionada);
+    const listaPersonagensFiltrada = filtrarPersonagens(listaPersonagens, "Todos Personagens", familiaSelecionada);
     exibirPersonagens(listaPersonagensFiltrada);
-
-    const personagensFiltradosPorFamilia = filtrarPersonagensPorFamilia(listaPersonagens, familiaSelecionada);
-    atualizarListaPersonagens(personagensFiltradosPorFamilia);
+    atualizarListaPersonagens(listaPersonagensFiltrada);
   }
 }
 
@@ -41,10 +39,10 @@ function onChangeSelecionarPersonagens() {
 
   if (personagemSelecionado === "Todos Personagens") {
     const familiaSelecionada = selecionarFamilia.value;
-    const personagensFiltradosPorFamilia = filtrarPersonagensPorFamilia(listaPersonagens, familiaSelecionada);
-    exibirPersonagens(personagensFiltradosPorFamilia);
+    const listaPersonagensFiltrada = filtrarPersonagens(listaPersonagens, personagemSelecionado, familiaSelecionada);
+    exibirPersonagens(listaPersonagensFiltrada);
   } else {
-    const personagem = filtrarPersonagem(listaPersonagens, personagemSelecionado);
+    const personagem = filtrarPersonagens(listaPersonagens, personagemSelecionado, "Todas Famílias");
     exibirPersonagens(personagem);
   }
 }
@@ -66,7 +64,6 @@ function exibirPersonagens(personagens) {
     cardContainer.appendChild(card);
   });
 }
-
 
 const familyArray = [];
 familyArray.push("Todas Famílias");
@@ -120,41 +117,6 @@ function atualizarListaPersonagens(personagens) {
     selecionarPersonagens.appendChild(option);
   });
 }
-
-const fullNameArray = [];
-fullNameArray.push("Todos Personagens");
-
-const optionTodosPersonagens = document.createElement('option');
-optionTodosPersonagens.value = "Todos Personagens";
-optionTodosPersonagens.textContent = "Todos Personagens";
-selecionarPersonagens.appendChild(optionTodosPersonagens);
-
-listaPersonagens.forEach(personagem => {
-  if (Array.isArray(personagem.fullName)) {
-    personagem.fullName.forEach(fullName => {
-      if (!fullNameArray.includes(fullName)) {
-        fullNameArray.push(fullName);
-      }
-    });
-  } else if (typeof personagem.fullName === 'string') {
-    const names = personagem.fullName.split(',');
-    names.forEach(fullName => {
-      const trimmedFullName = fullName.trim();
-      if (!fullNameArray.includes(trimmedFullName)) {
-        fullNameArray.push(trimmedFullName);
-      }
-    });
-  }
-});
-
-fullNameArray.sort();
-
-fullNameArray.forEach(fullName => {
-  const option = document.createElement('option');
-  option.value = fullName;
-  option.textContent = fullName;
-  selecionarPersonagens.appendChild(option);
-});
 
 const ordenar = document.getElementById('ordenacao');
 const opcoesOrdenacao = [
