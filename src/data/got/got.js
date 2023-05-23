@@ -493,7 +493,7 @@ export default{
       "lastName": "Pycelle",
       "fullName": "Pycelle",
       "title": "Grand Maester of the Seven Kingdoms",
-      "family": "",
+      "family": "House Unknown",
       "imageUrl": "https://thronesapi.com/assets/images/pycelle.jpg",
       "born": "216 DC",
       "death": "300 DC"
