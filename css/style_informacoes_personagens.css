@@ -182,22 +182,21 @@ select {
 @media screen and (max-width: 768px) { 
 .logo {
   width: 350px;
-  float: center;
+  float: none;
   margin: 25px 25px 25px 25px;
   align-self: flex-start;
 }
 
 .ladoDireito {
   width: 100%;
-  float: center;
-  margin: 25px 0  0;
-  align-self: flex-start;
+  float: none;
+    align-self: flex-start;
   font-size: 15px;
   line-height: 1.5;
-  text-shadow: 3px 3px black;}
-
+  text-shadow: 3px 3px black;
+}
   h1{
-    text-align: center;
+   text-align: center;
     font-size: 40px;
   }
   
@@ -206,7 +205,7 @@ select {
     width: 130px;
     border-radius: 50px;
     border: solid 3px rgb(0, 0, 0) ;  
-    margin: 300px 10px 0 10px;
+    margin: 10px 10px 0 10px;
     
  
     }
@@ -217,7 +216,7 @@ select {
     box-sizing: border-box; /* inclui a largura da borda e do padding no width */
     justify-content: center;  
     padding: 5px;
-    margin: 2px;
+    margin: 20px;
     font-size: 12px;
     text-shadow: 3px 3px black;
     line-height: 1.0;
@@ -237,5 +236,9 @@ select {
   .modal-content {
     font-size: 12px;
     width: 80%;
+  }
+  
+  button{
+    margin: 30px 0 30px  0;
   }
 }    
