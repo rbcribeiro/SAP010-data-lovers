@@ -56,13 +56,17 @@ Como um telespectador de Game of Thrones, eu quero encontrar na página web um d
     <img src=".github/prototipo_baixa_fidelidade.jfif" alt="Prototipo de baixa fidelidade" width="60%" /></p>
 
 ### Alta fidelidade
+
+<p align="center">
+    <img src=".github/páginainicial.png" alt="Prototipo de alta fidelidade" width="60%" /></p>
+
 <p align="center">
     <img src=".github/prototipo_alta_fidelidade.png" alt="Prototipo de alta fidelidade" width="60%" /></p>
 
 <p align="center">
     <img src=".github/prototipoiniciogif.gif" alt="Prototipo de alta fidelidade da página inicial" width="60%" /></p>   
 
-<br><br>
+<br>
 
 ## 5. Testes de usabilidade ❗
 
@@ -78,7 +82,6 @@ Com a ideia de acrescentar um botão que direcionava o usuário para o streaming
 ### Falta de responsividade em telas de dispositivos móveis 
 Após a página estar desenvolvida, observamos que ao visualizar em telas diferentes do desktop as imagens e os botões ficavam deslocados. Para resolver esse problema, incluimos no CSS um media query para que a página se adeque com o layout da tela.
 
-<br><br>
 
 ## 6. Checklist dos objetivos ✅
 
