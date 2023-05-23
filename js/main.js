@@ -53,10 +53,16 @@ function exibirPersonagens(personagens) {
 
   const cardsGot = personagens.map(personagem => {
     const cardDiv = document.createElement('div');
+    cardDiv.classList.add('card');
     cardDiv.innerHTML = `
       <img src="${personagem.imageUrl}">
       <h2>${personagem.fullName}</h2>
+
+
     `;
+    cardDiv.addEventListener('click', () => {
+      abrirModal(personagem);
+    });
     return cardDiv;
   });
 
@@ -113,7 +119,6 @@ function atualizarListaPersonagens(personagens) {
   });
 }
 
-const ordenar = document.getElementById('ordenacao');
 const opcoesOrdenacao = [
   { value: 'az', textContent: 'A-Z' },
   { value: 'za', textContent: 'Z-A' }
@@ -123,7 +128,7 @@ opcoesOrdenacao.forEach(opcao => {
   const option = document.createElement('option');
   option.value = opcao.value;
   option.textContent = opcao.textContent;
-  ordenar.appendChild(option);
+  ordenacao.appendChild(option);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -136,3 +141,30 @@ document.addEventListener("DOMContentLoaded", () => {
     onChangeOrdenacao(); // Chama a função para ordenar os cards ao carregar a página
   }
 });
+
+function abrirModal(personagem) {
+  const modal = document.getElementById("modal");
+
+  const modalTituloPersonagem = document.getElementById("modalTituloPersonagem");
+  const modalNomePersonagem = document.getElementById("modalNomePersonagem");
+  const modalFamiliaPersonagem = document.getElementById("modalFamiliaPersonagem");
+  const modalNascimentoPersonagem = document.getElementById("modalNascimentoPersonagem");
+
+  modalTituloPersonagem.textContent = "Título: " + personagem.title;
+  modalNomePersonagem.textContent = "Personagem: " + personagem.fullName;
+  modalFamiliaPersonagem.textContent = Array.isArray(personagem.family) ? personagem.family.join(", ") : personagem.family;
+  modalNascimentoPersonagem.textContent = "Nascimento: " + personagem.born;
+
+  modal.style.display = "block";
+
+  const closeButton = document.getElementsByClassName("close")[0];
+  closeButton.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", event => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+}
