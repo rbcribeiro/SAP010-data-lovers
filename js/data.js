@@ -5,14 +5,12 @@ function sort(personagens) {
       return -1;
     }
     return 1;
-
-
   });
 }
 
 export const ordenarNomes = (personagens, ordem) => {
-  const personagensComFamilia = filtrarPersonagensComFamilia(personagens);
-  let listaOrdenada = sort(personagensComFamilia);
+  const personagensFiltrados = filtrarPersonagens(personagens, "Todos Personagens", "Todas Famílias");
+  let listaOrdenada = sort(personagensFiltrados);
 
   if (ordem === 'za') {
     listaOrdenada = listaOrdenada.reverse();
@@ -21,30 +19,14 @@ export const ordenarNomes = (personagens, ordem) => {
   return listaOrdenada;
 };
 
-export const filtrarFamilia = (personagens, familia) => {
-  if (familia === "Todas Famílias") {
+export const filtrarPersonagens = (personagens, nome, familia) => {
+  if (nome === "Todos Personagens" && familia === "Todas Famílias") {
     return personagens; // Retorna a lista completa de personagens
   } else {
-    return personagens.filter(personagem => personagem.family === familia);
+    return personagens.filter(personagem => {
+      const nomeInclui = nome === "Todos Personagens" || personagem.fullName.includes(nome);
+      const familiaInclui = familia === "Todas Famílias" || personagem.family.includes(familia);
+      return nomeInclui && familiaInclui;
+    });
   }
-};
-
-export const filtrarPersonagensPorFamilia = (personagens, familia) => {
-  if (familia === "Todas Famílias") {
-    return personagens;
-  } else {
-    return personagens.filter(personagem => personagem.family.includes(familia));
-  }
-};
-
-export const filtrarPersonagensComFamilia = (personagens) => {
-  return personagens.filter(personagem => personagem.family);
-};
-
-export const filtrarPersonagem = (personagens, nome) => {
-  if (nome === "Todos Personagens") {
-    return personagens; // Retorna a lista completa de personagens
-  } else {
-    return personagens.filter(personagem => personagem.fullName.includes(nome));
-  }
-};
+}

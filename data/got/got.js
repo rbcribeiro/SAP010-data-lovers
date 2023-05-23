@@ -72,16 +72,6 @@ export default{
     },
     {
       "id": 7,
-      "firstName": "Robert",
-      "lastName": "Baratheon",
-      "fullName": "Robert Baratheon",
-      "title": "Lord of the Seven Kingdoms",
-      "family": "House Baratheon",
-      "imageUrl": "https://thronesapi.com/assets/images/robert-baratheon.jpeg",
-      "born": "262 DC"
-    },
-    {
-      "id": 8,
       "firstName": "Jamie",
       "lastName": "Lannister",
       "fullName": "Jamie Lannister",
@@ -92,7 +82,7 @@ export default{
       "death": "305 DC"
     },
     {
-      "id": 9,
+      "id": 8,
       "firstName": "Cersei",
       "lastName": "Lannister",
       "fullName": "Cersei Lannister",
@@ -103,7 +93,7 @@ export default{
       "death": "305 DC"
     },
     {
-      "id": 10,
+      "id": 9,
       "firstName": "Cateyln",
       "lastName": "Stark",
       "fullName": "Catelyn Stark",
@@ -114,7 +104,7 @@ export default{
       "death": "299 DC"
     },
     {
-      "id": 11,
+      "id": 10,
       "firstName": "Robb",
       "lastName": "Stark",
       "fullName": "Rob Stark",
@@ -125,7 +115,7 @@ export default{
       "death": "299 DC"
     },
     {
-      "id": 12,
+      "id": 11,
       "firstName": "Theon",
       "lastName": "Greyjoy",
       "fullName": "Theon Greyjoy",
@@ -135,7 +125,7 @@ export default{
       "born": "278 DC"
     },
     {
-      "id": 13,
+      "id": 12,
       "firstName": "Joffrey",
       "lastName": "Baratheon",
       "fullName": "Joffrey Baratheon",
@@ -146,7 +136,7 @@ export default{
       "death": "300 DC"
     },
     {
-      "id": 14,
+      "id": 13,
       "firstName": "Tyrion",
       "lastName": "Lannister",
       "fullName": "Tyrion Lannister",
@@ -156,7 +146,7 @@ export default{
       "born": "272 DC"
     },
     {
-      "id": 15,
+      "id": 14,
       "firstName": "Sandor",
       "lastName": "Clegane",
       "fullName": "The Hound",
@@ -167,7 +157,7 @@ export default{
       "death": "300 DC"
     },
     {
-      "id": 16,
+      "id": 15,
       "firstName": "Petyr",
       "lastName": "Baelish",
       "fullName": "Petyr Baelish",
@@ -178,7 +168,7 @@ export default{
       "death": "305 AL"
     },
     {
-      "id": 17,
+      "id": 16,
       "firstName": "Davos",
       "lastName": "Seaworth",
       "fullName": "Davos Seaworth",
@@ -188,7 +178,7 @@ export default{
       "born": null
     },
     {
-      "id": 18,
+      "id": 17,
       "firstName": "Stannis",
       "lastName": "Baratheon",
       "fullName": "Stannis Baratheon",
@@ -198,7 +188,7 @@ export default{
       "born": "265 AL"
     },
     {
-      "id": 19,
+      "id": 18,
       "firstName": "Varys",
       "lastName": "Unknown",
       "fullName": "Varys",
@@ -208,7 +198,7 @@ export default{
       "born": null
     },
     {
-      "id": 20,
+      "id": 19,
       "firstName": "Khal",
       "lastName": "Drogo",
       "fullName": "Khal Drogo",
@@ -219,7 +209,7 @@ export default{
       "death": "298 DC"
     },
     {
-      "id": 21,
+      "id": 20,
       "firstName": "Margaery",
       "lastName": "Tyrell",
       "fullName": "Margaery Tyrell",
@@ -230,7 +220,7 @@ export default{
       "death":"303 DC"
     },
     {
-      "id": 22,
+      "id": 21,
       "firstName": "Ygritte",
       "lastName": "None",
       "fullName": "Ygritte",
@@ -241,7 +231,7 @@ export default{
       "death": "299 DC"
     },
     {
-      "id": 23,
+      "id": 22,
       "firstName": "Brienne",
       "lastName": "Tarth",
       "fullName": "Brienne of Tarth",
@@ -251,7 +241,7 @@ export default{
       "born": "280 AL"
     },
     {
-      "id": 24,
+      "id": 23,
       "firstName": "Missandei",
       "lastName": "None",
       "fullName": "Missandei",
@@ -261,7 +251,7 @@ export default{
       "born": "289 DC"
     },
     {
-      "id": 25,
+      "id": 24,
       "firstName": "Gilly",
       "lastName": "None",
       "fullName": "Gilly",
@@ -271,7 +261,7 @@ export default{
       "born": null
     },
     {
-      "id": 26,
+      "id": 25,
       "firstName": "Viserys",
       "lastName": "Targaryen",
       "fullName": "Viserys Targaryen",
@@ -282,7 +272,7 @@ export default{
       "death": "298 DC"
     },
     {
-      "id": 27,
+      "id": 26,
       "firstName": "Rickon",
       "lastName": "Stark",
       "fullName": "Rickon Stark",
@@ -292,7 +282,7 @@ export default{
       "born": "295 DC"
     },
     {
-      "id": 28,
+      "id": 27,
       "firstName": "Roose",
       "lastName": "Bolton",
       "fullName": "Roose Bolton",
@@ -302,7 +292,7 @@ export default{
       "born": "255 DC"
     },
     {
-      "id": 29,
+      "id": 28,
       "firstName": "Daario",
       "lastName": "Naharis",
       "fullName": "Daario",
@@ -312,7 +302,7 @@ export default{
       "born": null
     },
     {
-      "id": 30,
+      "id": 29,
       "firstName": "Shae",
       "lastName": "",
       "fullName": "Shae",
@@ -323,7 +313,7 @@ export default{
       "death": "300 DC"
     },
     {
-      "id": 31,
+      "id": 30,
       "firstName": "Tommen",
       "lastName": "Baratheon",
       "fullName": "Tommen Baratheon",
@@ -333,7 +323,7 @@ export default{
       "born": "291 DC"
     },
     {
-      "id": 32,
+      "id": 31,
       "firstName": "Gendry",
       "lastName": "Baratheon",
       "fullName": "Gendry Baratheon",
@@ -343,7 +333,7 @@ export default{
       "born": "284 DC"
     },
     {
-      "id": 33,
+      "id": 32,
       "firstName": "Jorah",
       "lastName": "Mormont",
       "fullName": "Jorah Mormont",
@@ -353,7 +343,7 @@ export default{
       "born": "254 DC"
     },
     {
-      "id": 34,
+      "id": 33,
       "firstName": "Robert",
       "lastName": "Baratheon",
       "fullName": "Robert Baratheon",
@@ -364,7 +354,7 @@ export default{
       "death": "298 DC"
     },
     {
-      "id": 35,
+      "id": 34,
       "firstName": "Ramsey",
       "lastName": "Bolton",
       "fullName": "Ramsey Bolton",
@@ -374,7 +364,7 @@ export default{
       "born": "277 DC"
     },
     {
-      "id": 36,
+      "id": 35,
       "firstName": "Talisa",
       "lastName": "Stark",
       "fullName": "Talisa Stark",
@@ -385,7 +375,7 @@ export default{
       "death": "300 DC"
     },
     {
-      "id": 37,
+      "id": 36,
       "firstName": "Jeor",
       "lastName": "Mormont",
       "fullName": "Jeor Mormont",
@@ -396,7 +386,7 @@ export default{
       "death": "299 DC"
     },
     {
-      "id": 38,
+      "id": 37,
       "firstName": "The High",
       "lastName": "Sparrow",
       "fullName": "The High Sparrow",
@@ -406,7 +396,7 @@ export default{
       "born": null
     },
     {
-      "id": 39,
+      "id": 38,
       "firstName": "Oberyn",
       "lastName": "Martell",
       "fullName": "Oberyn Martell",
@@ -417,7 +407,7 @@ export default{
       "death": "300 DC"
     },
     {
-      "id": 40,
+      "id": 39,
       "firstName": "Melisandre",
       "lastName": "The Red Woman",
       "fullName": "Melisandre",
@@ -427,7 +417,7 @@ export default{
       "born": null
     },
     {
-      "id": 41,
+      "id": 40,
       "firstName": "Jaqen",
       "lastName": "H'ghar",
       "fullName": "Jaqen H'ghar",
@@ -437,7 +427,7 @@ export default{
       "born": null
     },
     {
-      "id": 42,
+      "id": 41,
       "firstName": "Tywin",
       "lastName": "Lannister",
       "fullName": "Tywin Lannister",
@@ -448,7 +438,7 @@ export default{
       "death": "301 DC"
     },
     {
-      "id": 43,
+      "id": 42,
       "firstName": "Ellaria",
       "lastName": "Sand",
       "fullName": "Ellaria Sand",
@@ -458,7 +448,7 @@ export default{
       "born": null
     },
     {
-      "id": 44,
+      "id": 43,
       "firstName": "Tormund",
       "lastName": "Giantsbane",
       "fullName": "Tormund Giantsbane",
@@ -468,7 +458,7 @@ export default{
       "born": null
     },
     {
-      "id": 45,
+      "id": 44,
       "firstName": "Yara",
       "lastName": "Greyjoy",
       "fullName": "Yara Greyjoy",
@@ -478,7 +468,7 @@ export default{
       "born": "276 DC"
     },
     {
-      "id": 46,
+      "id": 45,
       "firstName": "Euron",
       "lastName": "Greyjoy",
       "fullName": "Euron Greyjoy",
@@ -488,7 +478,7 @@ export default{
       "born": null
     },
     {
-      "id": 47,
+      "id": 46,
       "firstName": "Wylis",
       "lastName": "Hodor",
       "fullName": "Hodor",
@@ -498,7 +488,7 @@ export default{
       "born": null
     },
     {
-      "id": 48,
+      "id": 47,
       "firstName": "",
       "lastName": "Pycelle",
       "fullName": "Pycelle",
@@ -509,7 +499,7 @@ export default{
       "death": "300 DC"
     },
     {
-      "id": 49,
+      "id": 48,
       "firstName": "Grey",
       "lastName": "Worm",
       "fullName": "Grey Worm",
@@ -519,7 +509,7 @@ export default{
       "born": null
     },
     {
-      "id": 50,
+      "id": 49,
       "firstName": "Olenna",
       "lastName": "Tyrell",
       "fullName": "Olenna Tyrell",
@@ -529,7 +519,7 @@ export default{
       "born": "228 DC"
     },
     {
-      "id": 51,
+      "id": 50,
       "firstName": "Qyburn",
       "lastName": "Grand Maester",
       "fullName": "Qyburn",
@@ -539,7 +529,7 @@ export default{
       "born": null
     },
     {
-      "id": 52,
+      "id": 51,
       "firstName": "Lord",
       "lastName": "Bronn",
       "fullName": "Lord Bronn",
