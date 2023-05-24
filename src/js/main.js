@@ -20,7 +20,7 @@ function onChangeOrdenacao() {
   const listaOrdenada = ordenarNomes(listaPersonagensFiltrada, ordenacao.value);
   exibirPersonagens(listaOrdenada);
 }
-
+   
 function onChangeSelecionarFamilia() {
   const familiaSelecionada = selecionarFamilia.value;
 

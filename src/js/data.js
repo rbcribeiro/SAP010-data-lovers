@@ -35,4 +35,4 @@ export function computeStats(listaPersonagensFiltrada, listaPersonagens) {
   return {
     percentual: ((listaPersonagensFiltrada.length / listaPersonagens.length) * 100).toFixed(2),
   };
-}
+} 
