@@ -1,4 +1,4 @@
-import { ordenarNomes, filtrarPersonagens, computeStats } from '../src/js/data';
+import { ordenarNomes, filtrarPersonagens , computeStats } from '../src/js/data';
 
 const dados = [
   {
@@ -14,7 +14,7 @@ const dados = [
     "family": "House Stark"
   }
 ];
-
+    
 describe('ordenarNomes', () => {
   it('ordenarNomes is a function', () => {
     expect(typeof ordenarNomes).toBe('function');
