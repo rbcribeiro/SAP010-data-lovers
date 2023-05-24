@@ -1,5 +1,5 @@
 import got from '../data/got/got.js';
-import { ordenarNomes, filtrarPersonagens } from '../js/data.js';
+import { ordenarNomes, filtrarPersonagens, computeStats } from '../js/data.js';
 
 const listaPersonagens = got.got;
 const ordenacao = document.getElementById("ordenacao");
@@ -31,9 +31,20 @@ function onChangeSelecionarFamilia() {
     const listaPersonagensFiltrada = filtrarPersonagens(listaPersonagens, "Todos Personagens", familiaSelecionada);
     exibirPersonagens(listaPersonagensFiltrada);
     atualizarListaPersonagens(listaPersonagensFiltrada);
+
+    // Calcular a porcentagem da família selecionada
+    const todosPersonagens = filtrarPersonagens(listaPersonagens, "Todos Personagens", "Todas Famílias");
+    const resultado = computeStats(listaPersonagensFiltrada, todosPersonagens);
+
+    exibirPorcentagem(resultado.percentual);
   }
 }
 
+function exibirPorcentagem(percentual) {
+  const porcentagemElement = document.getElementById("porcentagem");
+  porcentagemElement.textContent = `Esta família possui ${percentual}% do total dos personagens`;
+}
+    
 function onChangeSelecionarPersonagens() {
   const personagemSelecionado = selecionarPersonagens.value;
 
