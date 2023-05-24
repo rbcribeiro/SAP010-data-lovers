@@ -1,4 +1,4 @@
-import { ordenarNomes, filtrarPersonagens } from '../src/js/data';
+import { ordenarNomes, filtrarPersonagens, computeStats } from '../src/js/data';
 
 const dados = [
   {
@@ -100,5 +100,19 @@ describe('filtrarPersonagens', () => {
     const familiaFiltrada = filtrarPersonagens(dados, 'Todos Personagens', 'Todas Famílias');
 
     expect(familiaFiltrada).toEqual(familiaEsperada);
+  });
+});
+
+describe('computeStats', () => {
+  it('computeStats is a function', () => {
+    expect(typeof computeStats).toBe('function');
+  });
+
+  it('Verifica a porcentagem do personagem por familia', () => {
+    const listaPersonagensFiltrada = dados.filter(personagem => personagem.family === 'House Stark');
+    const listaPersonagens = dados;
+    const resultado = computeStats(listaPersonagensFiltrada, listaPersonagens);
+    
+    expect(resultado.percentual).toEqual('33.33');
   });
 });

@@ -183,7 +183,7 @@ select {
   }
 
   #porcentagem {
-    font-size: 20px;
+   font-size: 30px;
     text-align: center;
   }
 
@@ -198,7 +198,7 @@ select {
 .ladoDireito {
   width: 100%;
   float: none;
-    align-self: flex-start;
+  align-self: flex-start;
   font-size: 15px;
   line-height: 1.5;
   text-shadow: 3px 3px black;
@@ -207,7 +207,11 @@ select {
    text-align: center;
     font-size: 40px;
   }
-  
+
+  h3 {
+    font-size: 20px;
+   
+  }
   .exibirCards img {
     height: 200px;
     width: 130px;
@@ -237,12 +241,12 @@ select {
    }
 
   footer {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 0.9;
   }
 
   .modal-content {
-    font-size: 12px;
+    font-size: 18px;
     width: 80%;
   }
   
