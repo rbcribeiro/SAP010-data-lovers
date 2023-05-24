@@ -126,7 +126,7 @@ select {
 
   }
     
-  footer a, footer p, .ladoDireito a {
+  footer a, footer p, .ladoDireito a, button a {
     margin: 5px;
     text-decoration: none;
     color: #D1CFCE;
